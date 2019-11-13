@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"  href="et2.css">
+<style>
+body {
+  font-family: "cursive";
+  font-size: 20px;
+  background-color: #818181
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+
+  
+
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> × </a>
+  <a href="Weekly_schedule.html "> Weekly  Schedule</a>
+  <a href="lesson_plan.html"> Lesson Plan</a>
+  <a href="COE.pdf" download> Calender of Events </a>
+  <a href="other_Activities"> Other Activities <br> /Projects </a>
+  <div class="dropdown-btn"> Work done
+                        <i class="fa fa-caret-down"></i>
+  </div>
+  <div class="dropdown-container">
+    <a href="3rd_semester.html"> 3rd Semester </a>
+    <a href="5th_semester.html"> 5th Semester </a>
+    <a href="7th_semester.html"> 7th Semester </a>
+  </div>
+  <a href="Publications.html"> Publication <br> /Newsletter </a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()"> ☰</button>  
+
+</div> 
+<h3> HELLO! |FACULTY NAME| </h3>
+<br>
+                <div class="checkboxes">
+                Work completed? <br>
+ <input type="checkbox" id="check_work_done"  name="check_work_done" onchange="checkDisable()" />
+                </div>
+                <div class="check">
+                  Remarks: <br>
+                <input type="text" id="ref_remarks"  name="ref_remarks" placeholder="Remarks" disabled /> <br>
+                 <br>
+                 No. of students Attended:  
+    
+              <input type="text" id="ref_attendance" name="ref_attendance" placeholder="Attendance" disabled/>
+                </div>
+                <br>
+
+<script>
+                   function checkDisable(){
+		var check_work_done = document.getElementById('check_work_done');
+		var inputRemarks = document.getElementById('ref_remarks');
+		var inputAttendance = document.getElementById('ref_attendance');
+		if(check_work_done.checked){
+            inputRemarks.disabled = false;
+            inputAttendance.disabled=false;
+		}
+		
+		if(!check_work_done.checked){
+			inputRemarks.disabled = true;
+			inputAttendance.disabled = true;
+		}
+    }
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+                  var i;
+                      for (i = 0; i < dropdown.length; i++) {
+                            dropdown[i].addEventListener("click", function() {
+                              this.classList.toggle("active");
+                               var dropdownContent = this.nextElementSibling;
+                                if (dropdownContent.style.display === "block") {
+                                  dropdownContent.style.display = "none";
+                                 } else {
+                                   dropdownContent.style.display = "block";
+                                   }
+                                     });
+                                 }
+</script>
+   <div class="login">
+    <form>  <input type="submit" name="" value="SUBMIT">
+      </form>
+    </div>
+</body>
+</html> 
