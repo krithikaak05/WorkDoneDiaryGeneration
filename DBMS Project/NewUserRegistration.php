@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=html, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head> 
+      <title>Faculty Work Diary Generation</title>
+   <link rel="stylesheet" type="text/css"  href="et.css">
+    <body>
+        <h3> New User Registration </h3>
+         <div class="loginbox"> 
+          <form action="InsertUser.php" method="POST" autocomplete="off"> <br>
+            <p> UserID: </p>
+            <input type="text" name="username" placeholder="Enter user id of your choice" required> <br>
+            <p> Password : </p>
+            <input type="password" name="password" placeholder="Enter password of your choice" required> <br>
+            <p> Full Name: </p>
+            <input type="text" name="fullname" placeholder="Enter your full name" required> <br>
+            <p> Age: </p>
+            <input type="text" name="age" placeholder="Enter your age" required> <br>
+            <p> Gender: </p>
+            <input type="text" name="gender" placeholder="Enter your gender" required> <br>
+            <p> Security questions:</p>
+            <p>1.What primary school did you attend?</p>
+            <input type="text" name="answer1" placeholder= "Your answer" required> <br>
+            <p>2.What is your grandmother's maiden name?  </p>
+            <input type="text" name="answer2" placeholder="Your answer" required> <br>
+            <a href="http://localhost/LoginPage.php"> Have an account? Login here </a><br>
+            </div>
+            <div class="lo">
+               <input type="submit" name="" value="REGISTER"> <br>
+            </div>
+        </form>
+     </body>
+  </head>
+</html>
