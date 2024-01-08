@@ -8,10 +8,10 @@ The Teacher Work Diary Generation System is designed to streamline the process o
 
 :warning: TechStack/Framework used
 
-PHP
-HTML
-CSS
-JavaScript
+* PHP
+* HTML
+* CSS
+* JavaScript
 
 
 :bulb: Working
@@ -22,7 +22,7 @@ The program operates as follows:
 2.  Work Diary Generation: Upon successful login, teachers can generate their work diaries, providing a detailed record of planned tasks and responsibilities. The diary includes information such as class schedules, subjects to be taught, and any additional responsibilities.
 3. Task/Work Completion: Teachers can update their work diaries in real-time as tasks are completed. This provides an accurate reflection of daily accomplishments and aids in tracking progress.
 
-<b> Further use cases are work in progress: <b>
+<b> Further use cases are work in progress: </b>
 1. Leave Management: The system includes functionality for teachers to request and manage leaves. If a teacher is on leave, the work diary is automatically adjusted to reflect the absence, ensuring accurate records.
 2. Substitute Teacher Assignments: In cases of teacher absence, the system facilitates the assignment of substitute teachers. The substitute's details and tasks are seamlessly integrated into the work diary.
 
