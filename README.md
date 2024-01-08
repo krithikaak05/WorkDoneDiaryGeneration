@@ -1,6 +1,4 @@
-# WorkDoneDiaryGeneration
-
-Teacher Work Diary Generation System
+<h1> WorkDoneDiaryGeneration </h1>
 
 :innocent: Motivation
 
